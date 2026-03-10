@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_da0942165cd545f99958498ac0234703 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_da0942165cd545f99958498ac0234703" ></div>
+        
+</body>
+<script>    
+    
+            var map_da0942165cd545f99958498ac0234703 = L.map(
+                "map_da0942165cd545f99958498ac0234703",
+                {
+                    center: [47.689297588, -0.064686228],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_08a164ccb2744710b64d55ab65368333 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_da0942165cd545f99958498ac0234703);
+        
+    
+            var marker_c0c9f2b2350b4e62b25af4d8da09cf4a = L.marker(
+                [47.689297588, -0.064686228],
+                {}
+            ).addTo(map_da0942165cd545f99958498ac0234703);
+        
+    
+        var popup_0ee53c29944b424ba74db544bcebcdbf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_215c6615244744088a2f644528b42ace = $(`<div id="html_215c6615244744088a2f644528b42ace" style="width: 100.0%; height: 100.0%;">La Fleche</div>`)[0];
+            popup_0ee53c29944b424ba74db544bcebcdbf.setContent(html_215c6615244744088a2f644528b42ace);
+        
+
+        marker_c0c9f2b2350b4e62b25af4d8da09cf4a.bindPopup(popup_0ee53c29944b424ba74db544bcebcdbf)
+        ;
+
+        
+    
+    
+            var marker_5a25cae2cd34443cb4c01d841029be6b = L.marker(
+                [44.126079726, -0.564074855],
+                {}
+            ).addTo(map_da0942165cd545f99958498ac0234703);
+        
+    
+        var popup_0d033f51efd44053bc15f3f1db253c7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d81cc57e080a43b8a1d06c5b59313d40 = $(`<div id="html_d81cc57e080a43b8a1d06c5b59313d40" style="width: 100.0%; height: 100.0%;">Labrit</div>`)[0];
+            popup_0d033f51efd44053bc15f3f1db253c7d.setContent(html_d81cc57e080a43b8a1d06c5b59313d40);
+        
+
+        marker_5a25cae2cd34443cb4c01d841029be6b.bindPopup(popup_0d033f51efd44053bc15f3f1db253c7d)
+        ;
+
+        
+    
+    
+            var poly_line_c3cad530315240d4b329163c99f06a02 = L.polyline(
+                [[47.689297588, -0.064686228], [44.126079726, -0.564074855]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_da0942165cd545f99958498ac0234703);
+        
+</script>

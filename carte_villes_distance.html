@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f717afcb6246498989fd86856aa5f99c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f717afcb6246498989fd86856aa5f99c" ></div>
+        
+</body>
+<script>    
+    
+            var map_f717afcb6246498989fd86856aa5f99c = L.map(
+                "map_f717afcb6246498989fd86856aa5f99c",
+                {
+                    center: [47.476657083999996, -0.556221025],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_104a93226d1d4beb862dd03d5108c19d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f717afcb6246498989fd86856aa5f99c);
+        
+    
+            var marker_166b3e8b4d4d4452ab002e51fd055f1d = L.marker(
+                [47.476657083999996, -0.556221025],
+                {}
+            ).addTo(map_f717afcb6246498989fd86856aa5f99c);
+        
+    
+        var popup_ba093e62d20f44649e66066f7388583b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cb9629de3d3c47e4aa84b586615a35f2 = $(`<div id="html_cb9629de3d3c47e4aa84b586615a35f2" style="width: 100.0%; height: 100.0%;">Angers</div>`)[0];
+            popup_ba093e62d20f44649e66066f7388583b.setContent(html_cb9629de3d3c47e4aa84b586615a35f2);
+        
+
+        marker_166b3e8b4d4d4452ab002e51fd055f1d.bindPopup(popup_ba093e62d20f44649e66066f7388583b)
+        ;
+
+        
+    
+    
+            var marker_663d97fcd5da4576aa1292cfbf8083be = L.marker(
+                [47.98867581, 0.200118821],
+                {}
+            ).addTo(map_f717afcb6246498989fd86856aa5f99c);
+        
+    
+        var popup_81a4af39f74d4d3580ece799bfefe7e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_00ff322e6dc34a4e8b92a45ccc11c41c = $(`<div id="html_00ff322e6dc34a4e8b92a45ccc11c41c" style="width: 100.0%; height: 100.0%;">Le Mans</div>`)[0];
+            popup_81a4af39f74d4d3580ece799bfefe7e1.setContent(html_00ff322e6dc34a4e8b92a45ccc11c41c);
+        
+
+        marker_663d97fcd5da4576aa1292cfbf8083be.bindPopup(popup_81a4af39f74d4d3580ece799bfefe7e1)
+        ;
+
+        
+    
+    
+            var poly_line_ba070edc7d884e6287a8fc76ac50f98e = L.polyline(
+                [[47.476657083999996, -0.556221025], [47.98867581, 0.200118821]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f717afcb6246498989fd86856aa5f99c);
+        
+    
+            var marker_941c05af5b7e4a778448b0635d264c55 = L.marker(
+                [47.732666447, -0.17805110200000002],
+                {}
+            ).addTo(map_f717afcb6246498989fd86856aa5f99c);
+        
+    
+        var popup_150738b595b04a5f912cd0f25c360802 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0e2960a2416840769693546fa4bb68c1 = $(`<div id="html_0e2960a2416840769693546fa4bb68c1" style="width: 100.0%; height: 100.0%;">Distance à vol d'oiseau : 80.26 km</div>`)[0];
+            popup_150738b595b04a5f912cd0f25c360802.setContent(html_0e2960a2416840769693546fa4bb68c1);
+        
+
+        marker_941c05af5b7e4a778448b0635d264c55.bindPopup(popup_150738b595b04a5f912cd0f25c360802)
+        ;
+
+        
+    
+</script>
